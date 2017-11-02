@@ -1,9 +1,10 @@
 from django.shortcuts import render
 from django.conf import settings
 from django.core.files.storage import FileSystemStorage
+
 # Create your views here.
 def home(request):
-    return render(request,'uploads/index.html')
+    return render(request, 'uploads/home.html')
 
 
 def simple_upload(request):

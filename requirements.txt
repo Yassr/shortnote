@@ -1,0 +1,7 @@
+Django==1.9.8
+easygui==0.98.1
+numpy==1.13.3
+olefile==0.44
+Pillow==4.3.0
+pytz==2017.2
+virtualenv==15.1.0

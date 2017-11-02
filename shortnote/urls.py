@@ -15,7 +15,6 @@ Including another URLconf
 """
 from django.conf import settings
 from django.conf.urls.static import static
-
 from django.conf.urls import url
 from django.contrib import admin
 from uploads import views
@@ -24,6 +23,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.home, name='home'),
     url(r'^upload/', views.simple_upload, name='upload'),
+    url(r'^uploads/simple/$', views.simple_upload, name='simple_upload'),
 ]
 
 
