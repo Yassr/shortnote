@@ -17,3 +17,4 @@ def simple_upload(request):
             'uploaded_file_url': uploaded_file_url
         })
     return render(request, 'uploads/simple_upload.html')
+
