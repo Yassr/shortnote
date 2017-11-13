@@ -9,12 +9,24 @@
     <button type="submit">Upload</button>
   </form>
 
-  {% if uploaded_file_url %}
+  {% if file_extentionV %}
     <p>File uploaded at: <a href="{{ uploaded_file_url }}">{{ uploaded_file_url }}</a></p>
+    <video src="{{ uploaded_file_url }}" preload="auto" controls="" autoplay=""></video>
+      <h1>This is the video size : {% video_clip %}</h1>
+
+{#  {% block content %}#}
+{##}
+{#    #}
+{##}
+{#  {% endblock %}#}
   {% endif %}
 
-{#    <audio src="{{ uploaded_file_url }}" preload="auto" controls="" autoplay=""></audio>#}
-    <video src="{{ uploaded_file_url }}" preload="auto" controls="" autoplay=""></video>
+  {% if file_extentionA %}
+    <p>File uploaded at: <a href="{{ uploaded_file_url }}">{{ uploaded_file_url }}</a></p>
+    <audio src="{{ uploaded_file_url }}" preload="auto" controls="" autoplay=""></audio>
+  {% endif %}
+
+
 
   <p><a href="{% url 'home' %}">Return to home</a></p>
 {% endblock %}
